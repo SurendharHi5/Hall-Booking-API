@@ -132,7 +132,7 @@ app.get('/customers', (req, res) => {
   });
 
 
-// how many times the user booked the room
+// list how many times the user booked the room
   app.get('/customer/:name', (req, res) => {
     const { name } = req.params;
     const customer = customers.find(cust => cust.name === name);
